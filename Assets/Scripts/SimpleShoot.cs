@@ -64,7 +64,7 @@ public class SimpleShoot : MonoBehaviour
 
     void Update()
     {
-        if (Vector3.Angle(transform.up, Vector3.up) > 100 && currentammo < maxammo)
+        if (Vector3.Angle(transform.up, Vector3.up) > 85 && currentammo < maxammo)
             Reload();
 
         if(text) text.text = currentammo.ToString();
